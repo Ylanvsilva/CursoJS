@@ -8,11 +8,11 @@ console.log('O filho de', nome, 'se chama Eduardo.');
 
 //? -----
 
-let nome; //* Declarou a variável
-nome = 'João'; //* Inicializando a variável
-console.log(nome);
-nome = 'Otávio'
-console.log(nome);
+let nome1; //* Declarou a variável
+nome1 = 'João'; //* Inicializando a variável
+console.log(nome1);
+nome1 = 'Otávio'
+console.log(nome1);
 
 /**
  * * Não podemos criar variáveis com palavras reservadas
@@ -38,4 +38,5 @@ console.log(nome);
  * ! let nomeCliente = 'Luiz';
  * ! nomeCliente = 'Otávio';
  * ! console.log(nomeCliente);
+ * * NÃO UTILIZE VAR, UTILIZE LET.
  */
