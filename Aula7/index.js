@@ -1,3 +1,5 @@
+//? Const
+
 /**
  * * Não podemos criar constantes com palavras reservadas
  * * Constantes precisam ter nomes significativos

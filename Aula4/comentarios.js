@@ -1,3 +1,5 @@
+//? Comentarios
+
 //* E Escrever um comentário
 console.log('Olá Mundo!'); //* Aqui tem outro comentário
 console.log('Linha 1');

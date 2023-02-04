@@ -1,3 +1,5 @@
+//? Textos
+
 //* Os textos em Javascript são indexados, ou seja possuem caracteres
 
 let umaString = "Um \"texto\""; //* Para usar aspas dentro de duas aspas

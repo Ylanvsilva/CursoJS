@@ -1,3 +1,5 @@
+//? Arrays
+
 //* Strings possuem elementos
 //*           01234567891011
 const nome = 'Ylan Vinicio'

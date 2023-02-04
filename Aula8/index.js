@@ -1,3 +1,5 @@
+//? Concatenação + Template strings
+
 const nome = 'Ylan Vinicio';
 const sobrenome = 'Santos Silva'; 
 const idade = 21;

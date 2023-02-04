@@ -1,3 +1,5 @@
+//? Strings e numbers
+
 //* Strings = Texto
 
 console.log("'Ylan Vinicio'");
