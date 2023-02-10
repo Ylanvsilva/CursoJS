@@ -12,15 +12,25 @@ console.log(`[5] para cancelar`)
 
 let escolha = Number(input.question('Digite o numero correspondente a sua doação: '));
 
-if (escolha === 1) {
-    console.log(`Você doou R$10!`);
-} else if (escolha === 2) {
-    console.log(`Você doou R$25!`);
-} else if (escolha === 3) {
-    console.log(`Você doou R$50`);
-} else if (escolha === 4) {
-    let outrosValores = Number(input.question(`Digite quantos reias você gostaria de doar R$`))
-    console.log(`Você doou R$${(outrosValores).toFixed(2)} reias`);
-} else {
-    console.log(`Cancelado, ate a proxima!`)
-}
+switch(escolha) {
+    case 1:
+        console.log(`Você doou R$10!`);
+        break;
+    case 2:
+        console.log(`Você doou R$25!`);
+        break;
+    case 3:
+        console.log(`Você doou R$50`);
+    case 4:
+        let outrosValores = Number(input.question(`Digite quantos reias você gostaria de doar R$`));
+        console.log(`Você doou R$${(outrosValores).toFixed(2)} reias`);
+        break;
+    case 5:
+        console.log(`Você doou R$0`);
+        escolha = 0;
+        break;
+    default:
+        console.log(`Cancelado, ate a proxima!`);
+};
+
+console.log(`Sua doação foi ${escolha.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`);
