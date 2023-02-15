@@ -1,3 +1,5 @@
+//* Exercicio com switch e date
+
 const h1 = document.querySelector('.container h1');
 
 const data = new Date();
