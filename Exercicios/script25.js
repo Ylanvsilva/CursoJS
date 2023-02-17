@@ -11,13 +11,13 @@ let maior = 0;
 let menor = 0;
 
 while (contador <= 5) {
-    let valor = Number(input.question(`Digite o ${contador} numero: `));
+    let valor = Number(input.question('Digite um numero: '));
 
     if (valor > maior) {
         maior = valor;
     }
 
-    if (contador == 1) {
+    if (contador === 1) {
         menor = valor;
     }
 
@@ -30,8 +30,8 @@ while (contador <= 5) {
     contador++;
 }
 
-console.log(`Total dos valores: ${soma}`);
+console.log(`A soma dos valores digitados e ${soma}`);
 
-console.log(`Maior valor: ${maior}`);
+console.log(`O maior valor digitado e: ${maior}`);
 
-console.log(`Menor valor: ${menor}`);
+console.log(`O menor valor digitado e: ${menor}`);
