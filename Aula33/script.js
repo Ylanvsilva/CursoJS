@@ -26,4 +26,4 @@ console.log(teste, sobrenome);
 //! Extraindo
 
 const { endereco: { rua: r = 12345, numero }, endereco } = pessoa;
-console.log(r, numero, endereco   );
+console.log(r, numero, endereco );
