@@ -1,21 +1,21 @@
 //! Contador inteligente
 
-let input = require('readline-sync');
+var input = require('readline-sync');
 
-let inicial = Number(input.question('Digite o numero inicial: '));
+let inicio = Number(input.question('Qual o valor inicial? '));
 
-let final = Number(input.question('Digite o numero final: '));
+let fim = Number(input.question('Qual o valor final? '));
 
-if (inicial < final) {
-    while(inicial <= final) {
-        console.log(inicial);
-        inicial++;
-    }
-} else if (inicial > final) {
-    while(inicial >= final) {
-        console.log(inicial);
-        inicial--;
-    }
+if (inicio < fim) {
+    while(inicio <= fim) {
+        console.log(inicio);
+        inicio++;
+    };
+} else if (inicio > fim) {
+    while(inicio >= fim) {
+        console.log(inicio);
+        inicio--;
+    };
 } else {
-    console.log('Valores iguais!');
+    console.log('Valores iguais');
 }
