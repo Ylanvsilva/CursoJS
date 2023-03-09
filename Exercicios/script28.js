@@ -25,3 +25,6 @@ while (contador < quantidaDeAlunos) {
 
 console.log(`A turma tem ${quantidaDeAlunos} alunos!`)
 console.log(`O melhor aproveitamento foi de ${melhorAluno} com a nota ${melhorNota}!`)
+
+//TODO - [] REFAZER O EXERCICIO
+//TODO - [] LER O CODIGO E ENTENDER A LOGICA
