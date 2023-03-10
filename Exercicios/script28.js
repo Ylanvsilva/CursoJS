@@ -2,29 +2,27 @@
 
 var input = require('readline-sync');
 
-let quantidaDeAlunos = input.question(`Quantos alunos a turma tem? `)
-
-console.clear();
+let quantidadeAluno = Number(input.question('Quantos alunos tem na sua sala? '));
 
 let contador = 0;
 
-let melhorNota = 0;
+let maiorNota = 0;
 
 let melhorAluno = ``;
 
-while (contador < quantidaDeAlunos) {
-    let nomeAluno = String(input.question(`Nome do aluno ${contador + 1}: `));
-    let notaAluno = Number(input.question(`Nota do aluno ${contador + 1}: `));
-    if (notaAluno > melhorNota) {
-        melhorNota = notaAluno;
-        melhorAluno = nomeAluno;
+while (contador < quantidadeAluno) {
+    let aluno = String(input.question(`Qual o nome do aluno [${contador + 1}]: `));
+
+    let nota = Number(input.question(`Qual sua nota [${contador + 1}]: `));
+
+    if (maiorNota < nota) {
+        maiorNota = nota;
+        melhorAluno = aluno;
     }
-    console.clear();
+
     contador++;
 }
 
-console.log(`A turma tem ${quantidaDeAlunos} alunos!`)
-console.log(`O melhor aproveitamento foi de ${melhorAluno} com a nota ${melhorNota}!`)
-
-//TODO - [] REFAZER O EXERCICIO
-//TODO - [] LER O CODIGO E ENTENDER A LOGICA
+console.log(`A turma tem ${quantidadeAluno} alunos!`);
+console.log(`O melhor aluno foi ${melhorAluno}`);
+console.log(`A maior nota foi ${maiorNota}`);
